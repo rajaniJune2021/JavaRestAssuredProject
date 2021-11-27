@@ -1,0 +1,18 @@
+{
+    "appId": "payments-test",
+    "customerId": "207102020121539",
+    "clubCode": "004",
+    "amount": 50.00,
+    "products": [
+        {
+            "productId": "00005801",
+            "productType": "membership",
+            "amount": 50.00
+        }
+    ],
+    "paymentType": "credit",
+    "autoPay": true,
+    "redirect": {
+        "returnUrl": "https://redirecturl.ace.aaa.com"
+    }
+}

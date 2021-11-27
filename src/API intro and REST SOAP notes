@@ -1,0 +1,50 @@
+REST: repressentation of state transferRest uses HTTP protocol
+Key elements :  resource( nothing but url of the application), REST can be deployed as standalone services also can also served to application communication.(SAAS: software as Service.)
+
+Request verbs: Methods like POST GET PUT DELETE
+The request headers: Authorization headers and client id secret id will go as key value pair.
+Request Body: POST and PUT we will be sending the data which we want to add or save this in server it can be databse server
+Response body will contain the data retrieved from the server based on the request sent
+Response status code: 200, 201, 400, 404, 500, 403, 204
+Native apps( Doesn't require API and source code will be deployed on end user phone) so without internet mobile app will be able to run ex: candy crush gold miner
+Hybrid app require API call service alos omni channel experience( Content of the web app and mobile app is same look and feel may varies but content will same since same API will be called for WEb and Mobile app)
+RESTful service - is stateless : state of the application will not be maintianed through each request.
+The out come of the one API request ca not be passed to the next APi request is called stateless( Example if any of the delete call service performed and next course of APi request wouldn't be affected)
+
+https://www.restapitutorial.com/httpstatuscodes.html - Https status codes list:
+
+
+
+List:
+PUT, DELETE,Get request with query paramters.
+BDD integration with rest assured.
+Allure report.
+
+SSkeleton of BDD framework
+Add the allure report dependencies.
+
+public API's for testing
+https://reqres.in/
+https://dummy.restapiexample.com
+
+Serialization and deserialization:
+
+Serialization is a process of sending POJO(plain old Java Object) as the request body for an API
+Deserialization is the process of mapping API response to POJO class
+Usage of serialization and deserialization : to map the API responses to Java variables to reuse them in other API calls.
+
+In the process of deserialization if POJO class has parametrized constructor to pass request body parameters
+and set the variable values after the POST request call we must have write default constructor explicitly.
+
+
+public free API's websites list:
+
+1. https://fakestoreapi.com/docs
+2. https://doc.api.afex.com/
+3. https://public-apis.io/
+4. https://apis.guru/
+5. online swagger - tool - https://inspector.swagger.io/builder
+6. https://openweathermap.org/triggers - Sample API's
+
+Important Json to POJO classes conversion:
+https://www.jsonschema2pojo.org/
