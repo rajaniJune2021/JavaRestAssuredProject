@@ -1,6 +1,6 @@
 {
     "appId": "payments-test",
-    "customerId": "207102020121539",
+    "customerId": "",
     "clubCode": "004",
     "amount": 50.00,
     "products": [
