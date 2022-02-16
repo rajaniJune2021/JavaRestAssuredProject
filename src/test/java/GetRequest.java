@@ -165,7 +165,7 @@ public class GetRequest extends APIUtils {
         JSONParser jsonParser = new JSONParser();
         JSONObject jsonObject = (JSONObject) jsonParser.parse(fr);
         System.out.println(jsonObject);
-        Response response = given().header("Content-Type", "application/json").header("Accept", "*/*").header("x-api-key","nksbSlayuPyt6aXnE4FgusHmYnc23s").body(jsonObject).when().post("/payment/v1/manifests").then().extract().response();
+        Response response = given().header("Content-Type", "application/json").header("Accept", "*/*").header("x-api-key","value").body(jsonObject).when().post("/payment/v1/manifests").then().extract().response();
         System.out.println(response.asString());
         if(response.getStatusCode() ==200){
            manifestId = response.jsonPath().get("id");
@@ -191,8 +191,8 @@ public class GetRequest extends APIUtils {
     @Test
     public void getManifest() throws IOException, ParseException {
         String maniFestID = postSaveManifestRequest();
-        RestAssured.baseURI ="https://apiuat1.ace.aaa.com/payment/v1";
-        Response response = given().header("Content-Type", "application/json").header("Accept", "*/*").header("client_id","nksbSlayuPyt6aXnE4FgusHmYnc23s").param(maniFestID).get("/manifests").then().extract().response();
+        RestAssured.baseURI ="https://apitest.test.test.com/payment/v1";
+        Response response = given().header("Content-Type", "application/json").header("Accept", "*/*").header("client_id","").param(maniFestID).get("/manifests").then().extract().response();
         if(response.getStatusCode()==200){
        //  Assert.assertEquals("membership", response.jsonPath().get("/products/productType"));
             Assert.assertEquals("membership", getJsonValue("/products/productType"));
