@@ -100,7 +100,7 @@ public class MobileAPIStepDefinition {
         map.put("customerId", customerId );
         System.out.println(map);
         System.out.println("accessToken value after resetting to null  " + accessToken);
-      userStepDefinition.response = userStepDefinition.requestSpecification.given().header("X-IBM-Client-Id","832512b7-ca21-4ea5-a3dd-ab53a2ce7ca2").header("X-IBM-Client-Secret","jB8oN2hF3wQ0jD8cY0cD7kA8cW4dY4tH7dH8bB0eU5nO1jJ1lQ").header("authorizationHeader","Bearer "+accessToken).queryParams(map).get(getUrl).then().extract().response();
+      userStepDefinition.response = userStepDefinition.requestSpecification.given().header("X-IBM-Client-Id","testvalue").header("X-IBM-Client-Secret","testvalue").header("authorizationHeader","Bearer "+accessToken).queryParams(map).get(getUrl).then().extract().response();
         System.out.println("get policies response code " + userStepDefinition.response.statusCode());
 //      userStepDefinition.response = userStepDefinition.requestSpecification.given().get(getUrl);
         System.out.println("get list of policies response" + userStepDefinition.response.asString());
