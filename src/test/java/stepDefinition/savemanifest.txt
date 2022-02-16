@@ -1,12 +1,12 @@
 {
     "appId": "payments-test",
     "customerId": "",
-    "clubCode": "004",
+    "clubCode": "000",
     "amount": 50.00,
     "products": [
         {
-            "productId": "00005801",
-            "productType": "membership",
+            "productId": "00000000",
+            "productType": "member",
             "amount": 50.00
         }
     ],
