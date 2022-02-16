@@ -13,6 +13,6 @@
     "paymentType": "credit",
     "autoPay": true,
     "redirect": {
-        "returnUrl": "https://redirecturl.ace.aaa.com"
+        "returnUrl": ""
     }
 }
